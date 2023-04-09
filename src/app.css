@@ -1,0 +1,18 @@
+
+
+.box{
+    width: 150px;
+    height: 150px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.one {
+    height: 150px;
+    width: 4px;
+    background: white;
+    /*transform: rotate(45deg);*/
+}
