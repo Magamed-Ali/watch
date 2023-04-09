@@ -23,12 +23,24 @@ function Clock() {
     }, []);
 
     return (
-        <div className="clock">
-            <img src={process.env.PUBLIC_URL + "/images/kisspng-alarm-clocks.png"} alt="clock"/>
-            <Hour hh={hh}/>
-            <Minutes mm={mm}/>
-            <Seconds ss={ss}/>
+        <div className="watch">
+            <div className="bookacket">
+                <div className="uncomenkad">
+                    <div id="vemekunys">
+                        {`${(hh / 30).toFixed()} : ${mm / 6} : ${ss / 6}`}
+                    </div>
+                </div>
+                <span></span>
+                <span></span>
+            </div>
+            <div className="clock">
+                <img src={process.env.PUBLIC_URL + "/images/kisspng-alarm-clocks.png"} alt="clock"/>
+                <Hour hh={hh}/>
+                <Minutes mm={mm}/>
+                <Seconds ss={ss}/>
+            </div>
         </div>
+
     );
 }
 
