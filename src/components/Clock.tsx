@@ -22,12 +22,10 @@ function Clock() {
         return () => clearInterval(intervalId);
     }, []);
 
-    console.log(ss)
-
     return (
         <div className="clock">
             <img src={process.env.PUBLIC_URL + "/images/kisspng-alarm-clocks.png"} alt="clock"/>
-            <Hour hh={hh} mm={mm}/>
+            <Hour hh={hh}/>
             <Minutes mm={mm}/>
             <Seconds ss={ss}/>
         </div>
