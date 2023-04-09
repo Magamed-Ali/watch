@@ -6,16 +6,10 @@ import Seconds from "./Seconds";
 function Clock() {
 
     const deg = 6;
-    const [day, setDay] = useState(new Date());
 
-    /** угол поврота часавой стрелки*/
-    const [hh, setHh] = useState(day.getHours() * 30)
-
-    /** угол поврота минутной стрелки*/
-    const [mm, setMm] = useState(day.getMinutes() * deg)
-
-    /** угол поврота секундной стрелки стрелки*/
-    const [ss, setSs] = useState(day.getSeconds() * deg)
+    const [hh, setHh] = useState(0);
+    const [mm, setMm] = useState(0);
+    const [ss, setSs] = useState(0);
 
     useEffect(() => {
         const intervalId = setInterval(() => {

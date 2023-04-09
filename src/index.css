@@ -44,11 +44,12 @@ body {
 .hour:before {
     content: "";
     position: absolute;
-    right: -3px;
     width: 7px;
+    right: -3px;
     height: 55px;
+    bottom: 0;
     background-color: white;
-    border-radius: 0 0 40% 40%;
+    border-radius: 40% 40% 0 0;
 }
 
 .minutes:before {
@@ -57,8 +58,9 @@ body {
     width: 5px;
     right: -2px;
     height: 75px;
+    bottom: 0;
     background-color: white;
-    border-radius: 0 0 40% 40%;
+    border-radius: 40% 40% 0 0;
 }
 
 .seconds:before{
@@ -68,7 +70,7 @@ body {
     right: -1px;
     bottom: -20px;
     height: 125px;
+
     background-color: rgba(253, 21, 21, 0.92);
     border-radius: 5px;
-
 }
