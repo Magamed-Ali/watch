@@ -22,6 +22,7 @@ function Clock() {
         return () => clearInterval(intervalId);
     }, []);
 
+    console.log(ss)
 
     return (
         <div className="clock">

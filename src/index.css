@@ -70,6 +70,7 @@ body {
     right: -1px;
     bottom: -20px;
     height: 125px;
+    transition: .3s;
 
     background-color: rgba(253, 21, 21, 0.92);
     border-radius: 5px;
