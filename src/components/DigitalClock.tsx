@@ -7,7 +7,7 @@ function DigitalClock(props: {hh: number, mm: number, ss: number}) {
         <div className="bookacket">
             <div className="uncomenkad">
                 <div id="vemekunys">
-                    {`${(hh / 30).toFixed()} : ${mm / 6} : ${ss / 6}`}
+                    {`${Math.trunc(hh / 30)} : ${mm / 6} : ${ss / 6}`}
                 </div>
             </div>
             <span></span>
