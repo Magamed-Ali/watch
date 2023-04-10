@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Hour from "./Hour";
 import Minutes from "./Minutes";
 import Seconds from "./Seconds";
+import DigitalClock from "./DigitalClock";
 
 function Clock() {
 
@@ -24,15 +25,7 @@ function Clock() {
 
     return (
         <div className="watch">
-            <div className="bookacket">
-                <div className="uncomenkad">
-                    <div id="vemekunys">
-                        {`${(hh / 30).toFixed()} : ${mm / 6} : ${ss / 6}`}
-                    </div>
-                </div>
-                <span></span>
-                <span></span>
-            </div>
+            <DigitalClock hh={hh} mm={mm} ss={ss} />
             <div className="clock">
                 <img src={process.env.PUBLIC_URL + "/images/kisspng-alarm-clocks.png"} alt="clock"/>
                 <Hour hh={hh}/>
